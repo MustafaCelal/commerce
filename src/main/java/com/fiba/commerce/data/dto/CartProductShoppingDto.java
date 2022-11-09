@@ -1,6 +1,6 @@
-package com.fiba.commerce.business.dto;
+package com.fiba.commerce.data.dto;
 
-public class CartProductDto {
+public class CartProductShoppingDto {
 
     private long cartProductId;
 
@@ -11,12 +11,15 @@ public class CartProductDto {
     private double salesPrice;
 
     private double lineAmount;
+
     private long cartId;
 
-    public CartProductDto() {
+    private CartShoppingDto cartShoppingDto;
+
+    public CartProductShoppingDto() {
     }
 
-    public CartProductDto(long cartProductId, long productId,
+    public CartProductShoppingDto(long cartProductId, long productId,
                           long salesQuantity, double salesPrice, double lineAmount) {
         this.cartProductId = cartProductId;
         this.productId = productId;
@@ -72,4 +75,6 @@ public class CartProductDto {
     public void setCartId(long cartId) {
         this.cartId = cartId;
     }
+
 }
+
