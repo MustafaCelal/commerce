@@ -13,7 +13,11 @@ public class CartServiceImpl implements CartService{
 
     @Override
     public long create() {
-
         return cartComponent.save();
+    }
+
+    @Override
+    public void checkoutCart(long cartId) {
+        cartComponent.checkoutCart(cartId);
     }
 }

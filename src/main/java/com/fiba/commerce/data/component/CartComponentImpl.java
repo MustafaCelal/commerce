@@ -15,4 +15,12 @@ public class CartComponentImpl implements CartComponent{
 
         return resultId;
     }
+
+    @Override
+    public void checkoutCart(long cartId) {
+        String url = "http://localhost:8082/shopping/checkout/"+cartId;
+
+        RestTemplate restTemplate = new RestTemplate();
+        restTemplate.getForObject(url, Void.class);
+    }
 }

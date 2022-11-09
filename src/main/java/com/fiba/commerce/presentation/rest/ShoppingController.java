@@ -33,4 +33,9 @@ public class ShoppingController {
         cartProductService.deleteProduct(cartId,productId);
     }
 
+    @GetMapping("/commerce/shopping/checkout/{cartId}")
+    public void checkoutCart(@PathVariable("cartId") long cartId) {
+        cartService.checkoutCart(cartId);
+    }
+
 }
