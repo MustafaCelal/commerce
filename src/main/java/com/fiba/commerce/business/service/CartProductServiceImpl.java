@@ -26,4 +26,9 @@ public class CartProductServiceImpl implements CartProductService{
 
         cartProductComponent.save(cartProductShoppingDto);
     }
+
+    @Override
+    public void deleteProduct(long cartId, long productId) {
+        cartProductComponent.deleteProduct(cartId, productId);
+    }
 }

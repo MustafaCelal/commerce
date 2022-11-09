@@ -3,10 +3,7 @@ package com.fiba.commerce.presentation.rest;
 import com.fiba.commerce.business.dto.CartProductDto;
 import com.fiba.commerce.business.service.CartProductService;
 import com.fiba.commerce.business.service.CartService;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 public class ShoppingController {
@@ -29,4 +26,11 @@ public class ShoppingController {
 
         cartProductService.add(cartProductDto);
     }
+
+    @DeleteMapping("/commerce/shopping/cart/{cartId}/remove/{productId}")
+    public void delete(@PathVariable("cartId") long cartId
+            ,@PathVariable("productId") long productId) {
+        cartProductService.deleteProduct(cartId,productId);
+    }
+
 }

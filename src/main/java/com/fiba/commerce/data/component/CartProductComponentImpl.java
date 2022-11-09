@@ -14,4 +14,13 @@ public class CartProductComponentImpl implements CartProductComponent{
         RestTemplate restTemplate= new RestTemplate();
         restTemplate.postForObject(url,cartProductShoppingDto,Void.class);
     }
+
+    @Override
+    public void deleteProduct(long cartId, long productId) {
+        String url="http://localhost:8082/shopping/cart/"+cartId+"/remove/"+productId;
+
+        RestTemplate restTemplate= new RestTemplate();
+        restTemplate.delete(url);
+    }
+
 }

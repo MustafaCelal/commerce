@@ -4,4 +4,5 @@ import com.fiba.commerce.business.dto.CartProductDto;
 
 public interface CartProductService {
     void add(CartProductDto cartProductDto);
+    void deleteProduct(long cartId,long productId);
 }
