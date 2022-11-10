@@ -1,4 +1,4 @@
-# Shopping
+# Commerce
 
 ![](/images/project_structure.png)
 
