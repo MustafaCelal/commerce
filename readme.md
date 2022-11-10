@@ -42,10 +42,10 @@ git clone https://github.com/MustafaCelal/commerce.git
 ![yeni sepet oluşturuldu](/images/Sepet%20olu%C5%9Fturuldu.png)
 
 ### Sepete ürün eklendi
-![sepete ürün eklendi](/images/Sepete%20%C3%BCr%C3%BCn%20eklendi.png)
+![sepete ürün eklendi](/images/sepete%20%C3%BCr%C3%BCn%20eklendi.png)
 
 ### Sepetten ürün silindi
-![Sepetten ürün silindi](/images/Sepetten%20%C3%BCr%C3%BCn%20silindi.png)
+![Sepetten ürün silindi](/images/sepetten%20%C3%BCr%C3%BCn%20silindi.png)
 
 ### Sepet durumu değiştirildi
 ![Sepet durumu değiştirildi](/images/sepetin%20durumu%20de%C4%9Fi%C5%9Ftirildi.png)
