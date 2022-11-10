@@ -1,0 +1,196 @@
+{
+	"info": {
+		"_postman_id": "7b3cf96a-7fdd-4c89-9a0b-a7fe0c59b1e0",
+		"name": "Commerce",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24322565"
+	},
+	"item": [
+		{
+			"name": "/shopping/cart/create",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/commerce/shopping/cart/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"commerce",
+						"shopping",
+						"cart",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/shopping/cart/add",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"lineAmaount\": 0,\n    \"productId\": 4,\n    \"salesPrice\": 0,\n    \"salesQuantity\": 0,\n    \"cartId\": 9\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/commerce/shopping/cart/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"commerce",
+						"shopping",
+						"cart",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/shopping/cart/{cartId}/remove/{productId}",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/commerce/shopping/cart/9/remove/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"commerce",
+						"shopping",
+						"cart",
+						"9",
+						"remove",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/shopping/checkout/{cartId}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/commerce/shopping/checkout/9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"commerce",
+						"shopping",
+						"checkout",
+						"9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/inventory/categories",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/commerce/inventory/categories",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"commerce",
+						"inventory",
+						"categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/inventory/category/{categoryId}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/commerce/inventory/category/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"commerce",
+						"inventory",
+						"category",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/inventory/product/{productId}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/commerce/inventory/product/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"commerce",
+						"inventory",
+						"product",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/inventory/products/{categoryId}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/commerce/inventory/products/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"commerce",
+						"inventory",
+						"products",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
